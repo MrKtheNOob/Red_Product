@@ -41,7 +41,7 @@ function login() {
           </form>
         </div>
         <p className="py-5 font-semibold">
-          Revenir à la <Link href="/forgot-password" className="text-amber-300 font-bold">connexion</Link>
+          Revenir à la <Link href="/login" className="text-amber-300 font-bold">connexion</Link>
         </p>
      
       </div>

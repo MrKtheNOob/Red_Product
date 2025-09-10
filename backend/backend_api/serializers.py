@@ -22,5 +22,5 @@ class HotelSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class UserLoginSerializer(serializers.Serializer):
-    username = serializers.CharField()
+    email = serializers.CharField()
     password = serializers.CharField()

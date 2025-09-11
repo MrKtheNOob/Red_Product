@@ -1,4 +1,4 @@
-import DashboardContent from '@/components/DashboardContent'
+import DashboardContent from '@/components/HomeContent'
 import { AuthProvider } from '@/lib/AuthContext'
 import React from 'react'
 

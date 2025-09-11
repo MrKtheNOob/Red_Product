@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import axios, { AxiosError } from "axios";
 import { toast } from "react-toastify";
+import Cookies from "js-cookie"; 
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from "@/lib/helpers";
 import { useRouter } from "next/navigation";
@@ -11,46 +12,53 @@ import { useRouter } from "next/navigation";
 function Login() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
 
-    const form = e.currentTarget;
-    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    const password = (form.elements.namedItem("password") as HTMLInputElement)
-      .value;
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
 
-    console.log("Login payload:", { email, password });
+  const form = e.currentTarget;
+  const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+  const password = (form.elements.namedItem("password") as HTMLInputElement)
+    .value;
 
-    try {
-      const res = await axios.post<{ email: string; password: string }>(
-        `${BASE_URL}/api/login/`,
-        { email: email, password: password },
-        {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
-        }
-      );
+  console.log("Login payload:", { email, password });
 
-      console.log("Login response:", res.data);
-      toast.success("Connexion réussie !");
-      router.replace("/");
-    } catch (err) {
-      if (err instanceof AxiosError) {
-        console.log("Login error:", err.response?.data || err.message);
-        toast.error(
-          err.response?.data?.error ||
-            err.response?.data?.detail ||
-            "Erreur lors de la connexion."
-        );
-      } else {
-        console.log("Unexpected login error:", err);
-        toast.error("Erreur lors de la connexion.");
+  try {
+    const csrfToken = Cookies.get("csrftoken");
+
+    const res = await axios.post(
+      `${BASE_URL}/api/login/`,
+      { email, password },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          ...(csrfToken ? { "X-CSRFToken": csrfToken } : {}),
+        },
+        withCredentials: true, // include session + csrf cookies
       }
-    } finally {
-      setLoading(false);
+    );
+
+    console.log("Login response:", res.data);
+    toast.success("Connexion réussie !");
+    router.replace("/");
+  } catch (err) {
+    if (err instanceof AxiosError) {
+      console.log("Login error:", err.response?.data || err.message);
+      toast.error(
+        err.response?.data?.error ||
+          err.response?.data?.detail ||
+          "Erreur lors de la connexion."
+      );
+    } else {
+      console.log("Unexpected login error:", err);
+      toast.error("Erreur lors de la connexion.");
     }
-  };
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <>

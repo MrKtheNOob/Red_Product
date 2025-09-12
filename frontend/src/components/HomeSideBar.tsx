@@ -51,8 +51,8 @@ function Sidebar({ isSidebarOpen, setIsSidebarOpen, user,subPage,setSubPage }: S
               <div onClick={()=>{handleChangeSubPage("dashboard")}}
                 className={`flex items-center px-4 py-2.5 mx-4 rounded-md hover:bg-gray-400 ${
                   subPage === "dashboard"
-                    ? "text-white "
-                    : "text-gray-400 hover: hover:text-white"
+                    ? "text-white bg-gray-400"
+                    : "text-gray-400 hover:text-white"
                 } transition-colors duration-200`}
               >
                 Dashboard
@@ -62,7 +62,7 @@ function Sidebar({ isSidebarOpen, setIsSidebarOpen, user,subPage,setSubPage }: S
               <div onClick={()=>{handleChangeSubPage("list")}}
                 className={`flex items-center px-4 py-2.5 mx-4 rounded-md hover:bg-gray-400 ${
                   subPage !== "dashboard"
-                    ? "text-white "
+                    ? "text-white bg-gray-400"
                     : "text-gray-400 hover: hover:text-white"
                 } transition-colors duration-200`}
               >

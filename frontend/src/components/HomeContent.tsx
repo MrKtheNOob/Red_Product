@@ -1,80 +1,48 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
-import axios from "axios";
-import "react-toastify/dist/ReactToastify.css";
-import { BASE_URL, getCsrfToken } from "@/lib/helpers";
+import { BASE_URL, getCsrfToken, getHotels, Hotel } from "@/lib/helpers";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/lib/AuthContext";
 import Sidebar from "./HomeSideBar";
 import DashboardHeader from "./HomeHeader";
 import HotelList from "./HotelList";
 import Dashboard from "./Dashboard";
-
-// Hotel data (replace with API data in real app)
-const hotels = [
-  {
-    title: "Hôtel Terrou-Bi",
-    address: "Boulevard Martin Luther King, Dakar, 11500",
-    price: "25.000 XOF par nuit",
-    imageSrc:
-      "https://placehold.co/600x400/8d8d8d/ffffff.png?text=Hotel+Terrou-Bi",
-  },
-  {
-    title: "King Fahd Palace",
-    address: "Rte des Almadies, Dakar",
-    price: "20.000 XOF par nuit",
-    imageSrc:
-      "https://placehold.co/600x400/8d8d8d/ffffff.png?text=King+Fahd+Palace",
-  },
-  {
-    title: "Radisson Blu Hotel",
-    address: "Rte de la Corniche, Dakar, 16668",
-    price: "22.000 XOF par nuit",
-    imageSrc:
-      "https://placehold.co/600x400/8d8d8d/ffffff.png?text=Radisson+Blu+Hotel",
-  },
-  {
-    title: "Pullman Dakar Teranga",
-    address: "Place de l'Independance, Dakar, 23",
-    price: "30.000 XOF par nuit",
-    imageSrc:
-      "https://placehold.co/600x400/8d8d8d/ffffff.png?text=Pullman+Dakar+Teranga",
-  },
-  {
-    title: "Hôtel Lac Rose",
-    address: "Lac Rose, Dakar",
-    price: "25.000 XOF par nuit",
-    imageSrc:
-      "https://placehold.co/600x400/8d8d8d/ffffff.png?text=Hotel+Lac+Rose",
-  },
-  {
-    title: "Hôtel Saly",
-    address: "Mbour, Senegal",
-    price: "20.000 XOF par nuit",
-    imageSrc: "https://placehold.co/600x400/8d8d8d/ffffff.png?text=Hotel+Saly",
-  },
-  {
-    title: "Palm Beach Resort & Spa",
-    address: "BPSA Saly 23000",
-    price: "22.000 XOF par nuit",
-    imageSrc:
-      "https://placehold.co/600x400/8d8d8d/ffffff.png?text=Palm+Beach+Resort+%26+Spa",
-  },
-];
+import axios from "axios";
 
 const DashboardContent = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [hotels, setHotels] = useState<Hotel[]>([]);
+  const [filteredHotels, setFilteredHotels] = useState<Hotel[]>(hotels);
   const [subPage, setSubPage] = useState("dashboard");
   const { user, loading } = useAuth();
   const router = useRouter();
-
+  useEffect(() => {
+    const fetchHotelsData = async () => {
+      const result = await getHotels();
+      console.log(result.data)
+      if (result.data) {
+        setFilteredHotels(result.data)
+        setHotels(result.data);
+        setFilteredHotels(result.data);
+      } else if (result.error) {
+        toast.error(
+          result.error.error || "Erreur lors du chargement des hôtels."
+        );
+      }
+    };
+    fetchHotelsData();
+  }, [subPage]);
   // redirect if not authenticated
   useEffect(() => {
-    if (!loading && !user) router.replace("/login");
+    if (!loading && !user) {
+      router.replace("/login");
+      toast.error("Vous devez être connecté pour accéder au tableau de bord.");
+    }
   }, [loading, user, router]);
 
   const handleLogout = async () => {
+    console.log(getCsrfToken());
     try {
       await axios.post(
         BASE_URL + "/api/logout/",
@@ -99,7 +67,24 @@ const DashboardContent = () => {
       }
     }
   };
+const handleOnChangeSearch = (value: string) => {
+  console.log("searching for", value);
 
+  const query = value.trim().toLowerCase();
+
+  if (query.length < 2) {
+    // show all hotels if query is too short
+    setFilteredHotels(hotels);
+  } else {
+    setFilteredHotels(
+      hotels.filter((hotel: Hotel) =>
+        hotel.name.toLowerCase().includes(query)
+      )
+    );
+  }
+};
+
+  console.log(filteredHotels)
   if (loading)
     return (
       <div className="flex items-center justify-center min-h-screen">
@@ -124,8 +109,13 @@ const DashboardContent = () => {
           handleLogout={handleLogout}
           user={user}
           subPage={subPage}
+          onChangeSearch={handleOnChangeSearch}
         />
-        {subPage == "dashboard" ? <Dashboard /> : <HotelList hotels={hotels} />}
+        {subPage == "dashboard" ? (
+          <Dashboard />
+        ) : (
+          <HotelList hotels={filteredHotels} />
+        )}
       </div>
     </div>
   );

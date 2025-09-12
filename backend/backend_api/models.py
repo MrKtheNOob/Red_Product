@@ -17,7 +17,7 @@ class Hotel(models.Model):
     price_per_night = models.BigIntegerField()
     currency = models.CharField(max_length=20)
     phone = models.CharField(max_length=255)
-    image = models.CharField(max_length=255)
+    image = models.ImageField(upload_to="temp/", blank=True, null=True)
 
     def __str__(self):
         return self.name

@@ -147,7 +147,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
     "http://127.0.0.1:3000", 
-    "https://red-product-lyart.vercel.app/",
+    "https://red-product-lyart.vercel.app",
     "http://192.168.48.42:3000"
 ]
 
@@ -155,7 +155,7 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://red-product-lyart.vercel.app/",
+    "https://red-product-lyart.vercel.app",
     "http://192.168.48.42:3000"
 ]
 

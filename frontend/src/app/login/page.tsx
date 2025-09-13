@@ -30,9 +30,9 @@ function Login() {
         { email, password },
         {
           withCredentials: true,
-          // headers: {
-          //   "X-CSRFToken": getCsrfToken(),
-          // },
+          headers: {
+            "X-CSRFToken": getCsrfToken(),
+          },
         }
       );
 

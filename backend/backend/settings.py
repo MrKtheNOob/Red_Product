@@ -153,7 +153,6 @@ CORS_ALLOWED_ORIGINS = [
     "https://red-product-2lw2d6llk-bambas-projects-1867b1a6.vercel.app",
 ]
 
-CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
@@ -162,9 +161,10 @@ CSRF_TRUSTED_ORIGINS = [
     "https://red-product-git-master-bambas-projects-1867b1a6.vercel.app",
     "https://red-product-2lw2d6llk-bambas-projects-1867b1a6.vercel.app",
 ]
-SESSION_COOKIE_SAMESITE = None
+CORS_ALLOW_CREDENTIALS = True
+SESSION_COOKIE_SAMESITE = "None"
 SESSION_COOKIE_SECURE = True  
-CSRF_COOKIE_SAMESITE = None
+CSRF_COOKIE_SAMESITE = "None"
 CSRF_COOKIE_SECURE = True  
 
 AUTH_USER_MODEL = "backend_api.User"

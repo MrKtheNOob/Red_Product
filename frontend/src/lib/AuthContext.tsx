@@ -36,6 +36,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       try {
         const res = await axios.get(BASE_URL + "/api/auth-check", {
           withCredentials: true,
+          headers:{
+            "X-CSRFToken": document.cookie
+              .split("; ")
+              .find((row) => row.startsWith("csrftoken="))
+              ?.split("=")[1] || "",
+          }
         });
         setUser(res.data);
       } catch (error) {

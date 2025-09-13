@@ -148,6 +148,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
     "http://127.0.0.1:3000", 
     "https://red-product-lyart.vercel.app",
+    "https://red-product-1sv3hyc1d-bambas-projects-1867b1a6.vercel.app",
     "http://192.168.48.42:3000"
 ]
 
@@ -156,6 +157,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "https://red-product-lyart.vercel.app",
+    "https://red-product-1sv3hyc1d-bambas-projects-1867b1a6.vercel.app",
     "http://192.168.48.42:3000"
 ]
 

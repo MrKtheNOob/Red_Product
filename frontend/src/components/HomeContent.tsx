@@ -43,6 +43,10 @@ const DashboardContent = () => {
 
   const handleLogout = async () => {
     console.log(getCsrfToken());
+    console.log(getCsrfToken());
+    console.log(getCsrfToken());
+    console.log(getCsrfToken());
+    console.log(getCsrfToken());
     try {
       await axios.post(
         BASE_URL + "/api/logout/",

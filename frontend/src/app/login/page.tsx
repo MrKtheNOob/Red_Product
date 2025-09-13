@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import axios, { AxiosError } from "axios";
 import { toast } from "react-toastify";
-import Cookies from "js-cookie";
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL, getCsrfToken } from "@/lib/helpers";
 import { useRouter } from "next/navigation";

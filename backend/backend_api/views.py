@@ -145,7 +145,8 @@ class PasswordResetRequestView(APIView):
 
         # Build the reset URL for the Next.js frontend
         # This URL must match your Next.js route
-        reset_url = f"http://localhost:3000/forgot/reset/{uid}/{token}"
+        
+        reset_url = f"https://red-product-lyart.vercel.app/forgot/reset/{uid}/{token}"
 
         email_body = f'Hi {user.username}, please use the link below to reset your password:\n{reset_url}'
         email = EmailMessage(

@@ -145,7 +145,7 @@ class PasswordResetRequestView(APIView):
 
         # Build the reset URL for the Next.js frontend
         # This URL must match your Next.js route
-        reset_url = f"http://localhost:3000/reset-password/{uid}/{token}"
+        reset_url = f"http://localhost:3000/forgot/reset/{uid}/{token}"
 
         email_body = f'Hi {user.username}, please use the link below to reset your password:\n{reset_url}'
         email = EmailMessage(
@@ -156,7 +156,7 @@ class PasswordResetRequestView(APIView):
         )
         email.send()
 
-        return Response({'message': 'Password reset link has been sent to your email.'}, status=status.HTTP_200_OK)
+        return Response({'message': 'Un lien vous a été envoyé par mail'}, status=status.HTTP_200_OK)
 
 
 class PasswordResetConfirmView(APIView):

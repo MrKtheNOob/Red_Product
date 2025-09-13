@@ -1,0 +1,1589 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "backend_api",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "backend_api",
+    "model": "hotel"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0pktpcmjasmmn1m712liu4oqfn02n7vs",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlnrX7Ap6TmDtfaucQA5UpxUiLuTSCmgmGbem3mLiOtS49p5jiOJi1AgTr9lwvzkthN6YLtPMk9tmcckd0UetMvbRPy6Hu7fQcVet7XjMnhgGBzqTMHYvCWYUIr2oCkllc_KQUCwAJyUKgYJrXLG6OSZxOcL91c3uQ:1uwiV1:7ecfvnO_vStaO_0BhVT5oo3E_lOrjhgH-vlFwKx9Frk",
+    "expire_date": "2025-09-25T14:42:11.549Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1qsob7816kj8n1612yaq2xuk89ck9d6j",
+  "fields": {
+    "session_data": ".eJxVjEsOwiAUAO_C2hBpAR8u3fcMzfuAVA0kpV0Z725IutDtzGTeasZ9y_Pe4jovoq7KGHX6hYT8jKUbeWC5V821bOtCuif6sE1PVeLrdrR_g4wt9y8EdsMghi_eWbYOCARdsgSexIZIY2QIdHaIyHE0yYtLgUeCYIYA6vMFDXc4eQ:1ux6Ol:_9U4VrTIh7VXhirlLCNqWUwzR0EDvNswfC1ES3y8LFI",
+    "expire_date": "2025-09-26T16:13:19.444Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "21uwfe25vxx96a97e2wmxmjgz9ep7nnf",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwMuy:tKybDBTrw0HrWkiW7yQOilYX7O5eZafj6LILwzFF4Qs",
+    "expire_date": "2025-09-24T15:39:32.130Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "225vu1nmnl9t2hgedlntmbwdi90zk7op",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux5yT:7eAW3kY8n9hwTUPUi1p3tTJHudBF7ZNDABUqzBnZMVE",
+    "expire_date": "2025-09-26T15:46:09.492Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2vhqndl4ve1n02ryuz2cqyozi5akkca2",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux6Nu:CD38-4H2fr-2a9yAhcS6VYK9oZPZ4vZpRZGylP6XDPg",
+    "expire_date": "2025-09-26T16:12:26.143Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3inydrd9od7ik7ol4h9yovsxay6j2owo",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux5vM:9G-LxWGYEGGzXIwfxpk9803ISzjPY8sbC9XnRxXw-0Y",
+    "expire_date": "2025-09-26T15:42:56.052Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "42burv0lfn8lqg0315ze7xkc1jljiqb2",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux6Uk:6x2c9BKuM5q-8Bnyvq7ufmPSRItiu-w33Liczv64iRk",
+    "expire_date": "2025-09-26T16:19:30.668Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4j4u6bsfta3qnx4757zlces3orn0z5sb",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1uwL5c:FIRIxHIy_NcqXbFaJEEa_7Eh2gBCE0BrujtSX2iFojM",
+    "expire_date": "2025-09-24T13:42:24.821Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "516g23fnw7jeq7kqb53lub67wfdeikxn",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux63y:gzKBfDeF3YCiXeGWYpLZrNvxnWNm_FHV-XHTrIcYqE0",
+    "expire_date": "2025-09-26T15:51:50.397Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6btnkne68erb28fzm0iatskva3842db4",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux6UX:hBuLuWCvtqQKBAHApAr836M-8AAHiHZmfpf_gSzwehM",
+    "expire_date": "2025-09-26T16:19:17.665Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "79ldzb6l1jiq883trtx08uoeoe9kj0e3",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBAKjMu3XsGMgyDVA1NSrsy3l2bdKHb_977LxVpXWpcu8xxzOqsrDr8bon4IW0D-U7tNmme2jKPSW-K3mnX1ynL87K7fweVev3WVOzgkMmg8-ChuGDB0gDCJrMgMLqM7uhRbDglDgnRFvZJxAQAL-r9AdXUN8I:1ux8Vi:Em7rr9UmfU0ONFy__LmS5adBUD8Nx0yxFwyGFnOxRUk",
+    "expire_date": "2025-09-26T18:28:38.441Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7tiikhoznhx1kqm85s9js8kbyy5z6kv1",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwOTs:5l3DSBdpibH5NnRR_ot_Eg_wGsHKWbWMQojqWvQTGn4",
+    "expire_date": "2025-09-24T17:19:40.344Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8grcalx57wiow4llnw7sqybabn7hz6t1",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux6Os:MiRIT1DwL-qtCSmbUmyhLoFnuNy4TA7-O6O6rtICsa0",
+    "expire_date": "2025-09-26T16:13:26.543Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8lfxw83m217vvcn4ui0dqyn6e01hv7kr",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwMZx:ezhFPNxnayDUPk9xRT4QW-DsMxjHcXQAae5TDx_XtiA",
+    "expire_date": "2025-09-24T15:17:49.502Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "92ce40gbxethfx8hso3x2rebk4pv4w2i",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwOTg:t2JRmD8xWeTqyxVj5U2kLD3o0TV2YCEvc0s6P5govEE",
+    "expire_date": "2025-09-24T17:19:28.204Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "aniu2wso41hrqrkwi3gk7dslhvinbtgq",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux64F:og8f0b5XfFAuil1dUxOsg8_HmTN4_ZLnMB5ksoxqtsQ",
+    "expire_date": "2025-09-26T15:52:07.166Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b1s2l0i8koena76whzg9wkk4ayn6b22f",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwOVa:D_WKuJ49mrLwSHeZZoEvujdCDQKR8T1BVyrXr1mBHbM",
+    "expire_date": "2025-09-24T17:21:26.462Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bzijd9uvz0kmffauwm7q53y8uyj0ft1o",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux63G:9RYX2OPe521Bi7n7kI5e_gxaZt99C-aOPKgwWc7Ijvw",
+    "expire_date": "2025-09-26T15:51:06.871Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "c220ryes42do6mitaj7ob5o4uwdyzoh6",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux6Xr:zo23b8JAMvPs3JwxezHEoHo3fwar6xcwB4vxKQ31B7A",
+    "expire_date": "2025-09-26T16:22:43.842Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ianqbxlqwza3wdlpefzyq1oqe3mcezrx",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwObD:9RtC4SVl45stUpttH-YR6Q3Hcf8E3jAVDE5j82bawVM",
+    "expire_date": "2025-09-24T17:27:15.521Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ivv7we5vrcnmud9opoyt6kqyj5ekwvdf",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux644:jQvp4VfdDENNbETBQ7J-MxqYkhLdlYblcp5U-GViWs8",
+    "expire_date": "2025-09-26T15:51:56.212Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "j64lj24g5za4om2jg5sj4kwrmwjwo3aw",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux6VC:hBiNTmS9p3Kw7YNX_ltjfjPahhlJC3VNy0j_-XbN790",
+    "expire_date": "2025-09-26T16:19:58.493Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jwkuq8jks5tjsoelxq6mpkr47y2od4ef",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux60e:SrqYd5Q0Nx12nA3b_B_8b1drYPOXaP-MI07gG9b0-Es",
+    "expire_date": "2025-09-26T15:48:24.290Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kxlm4wyjohkmuqevz86og7mpt3mwtu04",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBAKjMu3XsGMgyDVA1NSrsy3l2bdKHb_977LxVpXWpcu8xxzOqsrDr8bon4IW0D-U7tNmme2jKPSW-K3mnX1ynL87K7fweVev3WVOzgkMmg8-ChuGDB0gDCJrMgMLqM7uhRbDglDgnRFvZJxAQAL-r9AdXUN8I:1ux9xv:S2MsW_HPbsIRnJFXpS8UVti3RBFGNyA0KKci3-deRsQ",
+    "expire_date": "2025-09-26T20:01:51.090Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lf4miq2unr5z80vybciyrrp0uso3hzla",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwMfA:kZkW691ySEzPx3T2r27hAO8342k2Sgr8ufb7tZ-37rA",
+    "expire_date": "2025-09-24T15:23:12.680Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lfahyxsxjnldle1koi9v7kgqsr3izspk",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1uwJyn:b1p-upmOwQBibzKZcDdhhIUSl4e11VMV1sDt8N86Npc",
+    "expire_date": "2025-09-24T12:31:17.277Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "n6actp9ut8e9ht4jg2ixsgx3555jj1ic",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwOBf:dKgqO_hPOq50mRsAUS8QwX6RZ2k10HPkrRXrLEYrmuc",
+    "expire_date": "2025-09-24T17:00:51.485Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "o212f2j9x413k6wyh2ceecj9dslld4sc",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux60R:qP6Y6vRiN_z-xypzN3np3kocDUJyKQXNfrcHUsZU4Kw",
+    "expire_date": "2025-09-26T15:48:11.066Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ofp9qllrwowatq3bmweujyo8clkv4b2h",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwOBP:HaYuQIB2v3DSI0aCo5w759jW7QmZRPFGkPTakVJF4GI",
+    "expire_date": "2025-09-24T17:00:35.559Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tbser5191w5uk9xg5m7kgirqxztf8qxe",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwOG4:1-g4he_8vzT6WUiFUdmnPSV4QDxXp4T5i0u5YxcJBlU",
+    "expire_date": "2025-09-24T17:05:24.122Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wyn3ue5iek399ry359eaxp31jwv8ofpo",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1uwH6L:9URzab0UdYmcVPW__rbbmcw9E8344nrEj7bAlrrpxtQ",
+    "expire_date": "2025-09-24T09:26:53.874Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y6wdc5feb3i97ixmq959fbb7hbd7ocxf",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1ux62z:Ya4-ErWkDT64_I6dGRbIDSQpv6SpGFhYps6K3IEsuOo",
+    "expire_date": "2025-09-26T15:50:49.989Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y982vj1kddb55j2ply3id343rqcqgcio",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFCeUxduvcbCDMMUjWQlHZl_HfbpAvdnnPufYsQ16WEtfMcpiQuQonTL8NIT667SI9Y701Sq8s8odwTedguby3x63q0fwcl9rKtYQBKDgevHLH1ES14TdrbzJHJbgxy1uOY6QzoczJotHEGNBIMRlnx-QL1dzge:1uwm2Y:3K7zTdZkZDIHGOhJ5QMiCpzEBi5jITFhxSmXAu4nEyg",
+    "expire_date": "2025-09-25T18:29:02.971Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zdi5qopjl5qx8o8ghrve26wzle60s8cf",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm2N_5R0nMGa9cfHEC2FCcV4u4QKQW0b2beiwXc1hq2kZcwJ3Zmlp1-N8L4yG0H6Y7t1nnsbV1m4rvCDzr4taf8vBzu30HFUb91LGSBiotKO2e8Vgaj0ZQmEFpZCZI8eEU--mwVKJ2dKOgkShRTtiDZ-wPWzjcZ:1uwMuM:OXMVchgu7EcT6Trq3JCYWK4PuaP7mk4JA4ip-CuPQvQ",
+    "expire_date": "2025-09-24T15:38:54.812Z"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add hotel",
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "codename": "add_hotel"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change hotel",
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "codename": "change_hotel"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete hotel",
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "codename": "delete_hotel"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view hotel",
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "codename": "view_hotel"
+  }
+},
+{
+  "model": "backend_api.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Yczw2BOC7s2CoeER402oV8$abXvLc+qLr3fxERTaLIctqJ7iESPLWxz0BARRBkaItM=",
+    "last_login": "2025-09-12T20:01:51.083Z",
+    "is_superuser": true,
+    "username": "bamba",
+    "first_name": "",
+    "last_name": "",
+    "email": "ahmadoubamba706@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-09-10T09:26:25.628Z",
+    "created_at": "2025-09-10T09:26:26.703Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "backend_api.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$3qIbwfPJrmtENLYGSEyPTK$6a1GBbMg8vi6McWzdHX6Rvvb+TxozFr4OWz5ryKxJUQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "newuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "newuser@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-10T10:05:56.520Z",
+    "created_at": "2025-09-10T10:05:57.650Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "backend_api.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$tUsGpsBWRpisCn0FuxGYjS$7k7cNcwEmjV4+Ek5s8nFHsJHH3qx2mAvAV8/8Lmmd1E=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Khadim",
+    "first_name": "",
+    "last_name": "",
+    "email": "khadim@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-10T12:55:15.430Z",
+    "created_at": "2025-09-10T12:55:17.847Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "backend_api.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$BQl36ZVFvhdXrJK7jv1xk0$Wr1wQqMCxMEYLBtP8AcioMmYg+GKwjLJVJ4ebJAF5xQ=",
+    "last_login": "2025-09-11T14:42:11.540Z",
+    "is_superuser": false,
+    "username": "test",
+    "first_name": "",
+    "last_name": "",
+    "email": "test@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-11T00:30:48.813Z",
+    "created_at": "2025-09-11T00:30:49.973Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "backend_api.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$AgppGC0amPTRCMfYvzQOI7$3ID+R7grdUV76U1G6kDZ8pUl9hYK1Gta44Q3ezXG7KE=",
+    "last_login": "2025-09-12T16:13:19.416Z",
+    "is_superuser": false,
+    "username": "alice",
+    "first_name": "",
+    "last_name": "",
+    "email": "alice@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-11T16:06:23.055Z",
+    "created_at": "2025-09-11T16:06:24.121Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "backend_api.hotel",
+  "pk": 24,
+  "fields": {
+    "name": "Hôtel Terrou-Bi",
+    "email": "information@gmail.com",
+    "address": "Boulevard Martin Luther King, Dakar, 11500",
+    "user": [
+      "bamba"
+    ],
+    "price_per_night": 70,
+    "currency": "Dollar",
+    "phone": "+221777777777",
+    "image": "https://res.cloudinary.com/ddoslchqx/image/upload/v1757621180/m18acpe90mw4rqwk21tg.png"
+  }
+},
+{
+  "model": "backend_api.hotel",
+  "pk": 25,
+  "fields": {
+    "name": "King Fahd Palace",
+    "email": "information@gmail.com",
+    "address": "Rte des Almadies, Dakar",
+    "user": [
+      "bamba"
+    ],
+    "price_per_night": 21000,
+    "currency": "XOF",
+    "phone": "+221777777777",
+    "image": "https://res.cloudinary.com/ddoslchqx/image/upload/v1757621390/gijjh3aacelspsx7csme.png"
+  }
+},
+{
+  "model": "backend_api.hotel",
+  "pk": 26,
+  "fields": {
+    "name": "Pullman Dakar Teranga",
+    "email": "information@gmail.com",
+    "address": "Place de l'Independance, Dakar, 23",
+    "user": [
+      "bamba"
+    ],
+    "price_per_night": 30000,
+    "currency": "XOF",
+    "phone": "+221777777777",
+    "image": "https://res.cloudinary.com/ddoslchqx/image/upload/v1757621650/vcpbhphuyag53hqqnuft.png"
+  }
+},
+{
+  "model": "backend_api.hotel",
+  "pk": 27,
+  "fields": {
+    "name": "Hôtel Lac Rose",
+    "email": "information@gmail.com",
+    "address": "Lac Rose, Dakar",
+    "user": [
+      "bamba"
+    ],
+    "price_per_night": 25000,
+    "currency": "XOF",
+    "phone": "+221777777777",
+    "image": "https://res.cloudinary.com/ddoslchqx/image/upload/v1757621653/mejum0f3hjgm1wflkc88.png"
+  }
+},
+{
+  "model": "backend_api.hotel",
+  "pk": 28,
+  "fields": {
+    "name": "Hôtel Saly",
+    "email": "information@gmail.com",
+    "address": "Mbour, Senegal",
+    "user": [
+      "bamba"
+    ],
+    "price_per_night": 25000,
+    "currency": "XOF",
+    "phone": "+221777777777",
+    "image": "https://res.cloudinary.com/ddoslchqx/image/upload/v1757621676/m13wxssubr5415pqorqz.png"
+  }
+},
+{
+  "model": "backend_api.hotel",
+  "pk": 29,
+  "fields": {
+    "name": "Radisson Blu Hotel",
+    "email": "information@gmail.com",
+    "address": "Rte de la Corniche, Dakar, 16668",
+    "user": [
+      "bamba"
+    ],
+    "price_per_night": 22000,
+    "currency": "XOF",
+    "phone": "+221777777777",
+    "image": "https://res.cloudinary.com/ddoslchqx/image/upload/v1757623435/tm6yxul4foykspiwwm46.png"
+  }
+},
+{
+  "model": "backend_api.hotel",
+  "pk": 30,
+  "fields": {
+    "name": "Palm Beach Resort & Spa",
+    "email": "information@gmail.com",
+    "address": "BPSA Saly 23000",
+    "user": [
+      "bamba"
+    ],
+    "price_per_night": 22000,
+    "currency": "XOF",
+    "phone": "+221777777777",
+    "image": "https://res.cloudinary.com/ddoslchqx/image/upload/v1757623883/dzmbnugyfmftssujbk1y.png"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-09-10T14:29:33.774Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "object_id": "6",
+    "object_repr": "anothertestuser",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-09-10T14:39:16.764Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "anothertest",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-09-10T14:39:21.881Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "testuser",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-09-10T18:42:08.713Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "object_id": "8",
+    "object_repr": "autretest",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-09-11T00:30:16.191Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "object_id": "9",
+    "object_repr": "autretest",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-09-11T00:30:24.678Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "user"
+    ],
+    "object_id": "7",
+    "object_repr": "test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-09-11T13:54:22.329Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "1",
+    "object_repr": "Hôtel Terrou-Bi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-09-11T13:59:28.738Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "1",
+    "object_repr": "Hôtel Terrou-Bi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-09-11T14:01:08.167Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "2",
+    "object_repr": "King Fahd Palace",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-09-11T14:01:59.137Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "3",
+    "object_repr": "Radisson Blu Hotel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-09-11T14:02:57.349Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "4",
+    "object_repr": "Pullman Dakar Teranga",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-09-11T14:03:49.797Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "5",
+    "object_repr": "Hôtel Lac Rose",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-09-11T14:04:45.928Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "6",
+    "object_repr": "Hôtel Saly",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-09-11T14:05:22.493Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "7",
+    "object_repr": "Palm Beach Resort & Spa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "9",
+    "object_repr": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "8",
+    "object_repr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "7",
+    "object_repr": "Palm Beach Resort & Spa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "6",
+    "object_repr": "Hôtel Saly",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "5",
+    "object_repr": "Hôtel Lac Rose",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "4",
+    "object_repr": "Pullman Dakar Teranga",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "3",
+    "object_repr": "Radisson Blu Hotel",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "2",
+    "object_repr": "King Fahd Palace",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-09-11T18:29:43.866Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "1",
+    "object_repr": "Hôtel Terrou-Bi",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-09-11T19:13:23.849Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "17",
+    "object_repr": "Lorem ipsum, dolor consec adpisicing eit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-09-11T19:13:23.849Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "16",
+    "object_repr": "Lorem ipsum, dolor consec adipisicing eit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-09-11T19:13:23.849Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "15",
+    "object_repr": "Lorem ipsum, dolor consect adipisicing eit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-09-11T19:13:23.849Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "14",
+    "object_repr": "Lorem ipsum, dolor consectetur adipisicing eit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-09-11T19:13:23.849Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "13",
+    "object_repr": "Lorem ipsum, dolor  amet consectetur adipisicing eit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-09-11T19:13:23.849Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "12",
+    "object_repr": "Lorem ipsum, dolor sit amet consectetur adipisicing eit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-09-11T19:13:23.849Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "11",
+    "object_repr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-09-11T19:13:23.849Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "10",
+    "object_repr": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-09-11T19:39:53.209Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "18",
+    "object_repr": "Hôtel Terrou-Bi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-09-11T19:41:12.844Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "19",
+    "object_repr": "King Fahd Palace",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-09-11T19:43:08.808Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "20",
+    "object_repr": "Radisson Blu Hotel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-09-11T19:44:15.692Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "21",
+    "object_repr": "Pullman Dakar Teranga",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-09-11T19:45:11.986Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "22",
+    "object_repr": "Hôtel Lac Rose",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-09-11T19:47:34.371Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "22",
+    "object_repr": "Hôtel Lac Rose",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-09-11T19:47:34.371Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "21",
+    "object_repr": "Pullman Dakar Teranga",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-09-11T19:47:34.371Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "20",
+    "object_repr": "Radisson Blu Hotel",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-09-11T19:47:34.371Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "19",
+    "object_repr": "King Fahd Palace",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-09-11T19:47:34.371Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "18",
+    "object_repr": "Hôtel Terrou-Bi",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-09-11T20:04:44.320Z",
+    "user": [
+      "bamba"
+    ],
+    "content_type": [
+      "backend_api",
+      "hotel"
+    ],
+    "object_id": "23",
+    "object_repr": "Hôtel Terrou-Bi",
+    "action_flag": 3,
+    "change_message": ""
+  }
+}
+]

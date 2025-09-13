@@ -2,8 +2,8 @@
 *~
 backend/__pycache__/
 .DS_Store
-/backend/settings.py
 /backend/.env
 *.sqlite3
 /static
 /media
+.env

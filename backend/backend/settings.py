@@ -168,8 +168,8 @@ CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SAMESITE = None
 CSRF_COOKIE_SAMESITE = None
 SESSION_COOKIE_DOMAIN = None
-SESSION_COOKIE_DOMAIN = "red-product-lyart.vercel.app"
-CSRF_COOKIE_DOMAIN = "red-product-lyart.vercel.app"
+SESSION_COOKIE_DOMAIN = "https://red-product-yq6e.onrender.com"
+CSRF_COOKIE_DOMAIN = "https://red-product-yq6e.onrender.com"
 
 
 AUTH_USER_MODEL = "backend_api.User"

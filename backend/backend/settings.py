@@ -166,8 +166,8 @@ CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SAMESITE = None
 CSRF_COOKIE_SAMESITE = None
 SESSION_COOKIE_DOMAIN = None
-SESSION_COOKIE_DOMAIN = ".vercel.app"
-CSRF_COOKIE_DOMAIN = ".vercel.app"
+SESSION_COOKIE_DOMAIN = "red-product-lyart.vercel.app"
+CSRF_COOKIE_DOMAIN = "red-product-lyart.vercel.app"
 
 
 AUTH_USER_MODEL = "backend_api.User"

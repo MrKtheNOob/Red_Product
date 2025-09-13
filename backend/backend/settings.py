@@ -161,8 +161,8 @@ CSRF_TRUSTED_ORIGINS = [
     "https://red-product-git-master-bambas-projects-1867b1a6.vercel.app",
     "https://red-product-2lw2d6llk-bambas-projects-1867b1a6.vercel.app",
 ]
-SESSION_COOKIE_SECURE = False
-CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SAMESITE = None
 CSRF_COOKIE_SAMESITE = None
 SESSION_COOKIE_DOMAIN = None

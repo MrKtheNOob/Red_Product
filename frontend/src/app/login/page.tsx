@@ -5,7 +5,7 @@ import { useState } from "react";
 import axios, { AxiosError } from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { BASE_URL, getCsrfToken } from "@/lib/helpers";
+import { BASE_URL } from "@/lib/helpers";
 import { useRouter } from "next/navigation";
 
 function Login() {
@@ -29,9 +29,6 @@ function Login() {
         { email, password },
         {
           withCredentials: true,
-          headers: {
-            "X-CSRFToken": getCsrfToken(),
-          },
         }
       );
 

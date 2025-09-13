@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = "https://red-product-lyart.vercel.app/";
+export const BASE_URL = "https://red-product-yq6e.onrender.com";
 
 export interface Hotel {
   id: number;

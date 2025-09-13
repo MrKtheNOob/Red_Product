@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = "http://192.168.48.42:8000";
+export const BASE_URL = "https://red-product-lyart.vercel.app/";
 
 export interface Hotel {
   id: number;

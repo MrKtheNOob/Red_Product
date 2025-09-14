@@ -23,11 +23,14 @@ export type Result<T> = {
   error: Error | null;
 };
 
-export function getCsrfToken() {
-  const cookie = document.cookie
-    .split("; ")
-    .find((row) => row.startsWith("csrftoken="));
-  return cookie ? cookie.split("=")[1] : "";
+export async function getCsrfToken() {
+    const csrfResponse = await axios.get(BASE_URL + "/api/csrf-token/", {
+      withCredentials: true, // make sure cookies are included
+    });
+    const csrfToken = csrfResponse.data.csrfToken;
+
+    console.log("CSRF token (from backend):", csrfToken);
+    return csrfToken
 }
 
 export function formatPrice(price: number): string {
@@ -52,7 +55,7 @@ export async function getHotels(): Promise<Result<Hotel[]>> {
   try {
     const result = await axios.get(BASE_URL + "/api/hotels/", {
       withCredentials: true, headers: {
-        "X-CSRFToken": getCsrfToken(),
+        "X-CSRFToken": await getCsrfToken(),
       },
     });
     console.log(result.data);
@@ -97,7 +100,7 @@ export async function createHotel(hotelData: {
     const result = await axios.post(BASE_URL + "/api/hotels/", formData, {
       withCredentials: true,
       headers: {
-        "X-CSRFToken": getCsrfToken(),
+        "X-CSRFToken": await getCsrfToken(),
         "Content-Type": "multipart/form-data",
       },
     });
@@ -149,7 +152,7 @@ export async function updateHotel(
       {
         withCredentials: true,
         headers: {
-          "X-CSRFToken": getCsrfToken(),
+          "X-CSRFToken": await getCsrfToken(),
           "Content-Type": "multipart/form-data",
         },
       }
@@ -173,7 +176,7 @@ export async function deleteHotel(id: number): Promise<Result<null>> {
     await axios.delete(`${BASE_URL}/api/hotels/${id}/`, {
       withCredentials: true,
       headers: {
-        "X-CSRFToken": getCsrfToken(),
+        "X-CSRFToken": await getCsrfToken(),
       },
     });
     return { data: null, error: null };

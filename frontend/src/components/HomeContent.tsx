@@ -43,15 +43,8 @@ const DashboardContent = () => {
 
   const handleLogout = async () => {
   try {
-    // Step 1: fetch a fresh CSRF token from the backend
-    const csrfResponse = await axios.get(BASE_URL + "/api/csrf-token/", {
-      withCredentials: true, // make sure cookies are included
-    });
-    const csrfToken = csrfResponse.data.csrfToken;
+    const csrfToken=await getCsrfToken()
 
-    console.log("CSRF token (from backend):", csrfToken);
-
-    // Step 2: call logout with the CSRF token in headers
     await axios.post(
       BASE_URL + "/api/logout/",
       {},

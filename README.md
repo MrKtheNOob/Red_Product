@@ -1,8 +1,8 @@
-# Titre du Projet : Système de Gestion Hôtelière
+# Red Product
 
 ## Description
 
-Ce projet est un système de gestion hôtelière construit avec Django (pour le backend) et Next.js (pour le frontend). Il offre des fonctionnalités pour gérer les utilisateurs et les hôtels, y compris les opérations CRUD, l'authentification et la réinitialisation de mot de passe.
+Ce projet est un système de gestion hôtelière implémenté avec Django (pour le backend) et Next.js (pour le frontend). Il offre des fonctionnalités pour gérer les utilisateurs et les hôtels, y compris les opérations CRUD, l'authentification et la réinitialisation de mot de passe.
 
 ## Structure du Projet
 
@@ -57,7 +57,7 @@ project1
 ### 1\. Cloner le dépôt :
 
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/MrKtheNOob/Red_Product.git)
 cd project1
 ```
 

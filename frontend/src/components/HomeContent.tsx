@@ -20,9 +20,9 @@ const DashboardContent = () => {
   useEffect(() => {
     const fetchHotelsData = async () => {
       const result = await getHotels();
-      console.log(result.data)
+      console.log(result.data);
       if (result.data) {
-        setFilteredHotels(result.data)
+        setFilteredHotels(result.data);
         setHotels(result.data);
         setFilteredHotels(result.data);
       } else if (result.error) {
@@ -42,22 +42,9 @@ const DashboardContent = () => {
   }, [loading, user, router]);
 
   const handleLogout = async () => {
-    console.log(getCsrfToken());
-    console.log(getCsrfToken());
-    console.log(getCsrfToken());
-    console.log(getCsrfToken());
-    console.log(getCsrfToken());
+    console.log("CRSF token:", getCsrfToken());
     try {
-      await axios.post(
-        BASE_URL + "/api/logout/",
-        {},
-        {
-          withCredentials: true,
-          headers: {
-            "X-CSRFToken": getCsrfToken(),
-          },
-        }
-      );
+      await axios.post(BASE_URL + "/api/logout/", {}); // no headers needed
       toast.success("Déconnexion réussie !");
       router.replace("/login");
     } catch (error: unknown) {
@@ -71,24 +58,24 @@ const DashboardContent = () => {
       }
     }
   };
-const handleOnChangeSearch = (value: string) => {
-  console.log("searching for", value);
+  const handleOnChangeSearch = (value: string) => {
+    console.log("searching for", value);
 
-  const query = value.trim().toLowerCase();
+    const query = value.trim().toLowerCase();
 
-  if (query.length < 2) {
-    // show all hotels if query is too short
-    setFilteredHotels(hotels);
-  } else {
-    setFilteredHotels(
-      hotels.filter((hotel: Hotel) =>
-        hotel.name.toLowerCase().includes(query)
-      )
-    );
-  }
-};
+    if (query.length < 2) {
+      // show all hotels if query is too short
+      setFilteredHotels(hotels);
+    } else {
+      setFilteredHotels(
+        hotels.filter((hotel: Hotel) =>
+          hotel.name.toLowerCase().includes(query)
+        )
+      );
+    }
+  };
 
-  console.log(filteredHotels)
+  console.log(filteredHotels);
   if (loading)
     return (
       <div className="flex items-center justify-center min-h-screen">

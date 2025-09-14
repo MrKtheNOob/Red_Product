@@ -7,7 +7,6 @@ Ce projet est un système de gestion hôtelière implémenté avec Django (pour 
 ## Structure du Projet
 
 ```
-project1
 ├── backend
 │   ├── backend
 │   │   ├── __init__.py

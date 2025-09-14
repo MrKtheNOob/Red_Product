@@ -1,9 +1,11 @@
-# Project Title: Hotel Management System
+# Titre du Projet : Système de Gestion Hôtelière
 
 ## Description
-This project is a Hotel Management System built using Django. It provides functionalities for managing users and hotels, including CRUD operations and authentication routes.
 
-## Project Structure
+Ce projet est un système de gestion hôtelière construit avec Django (pour le backend) et Next.js (pour le frontend). Il offre des fonctionnalités pour gérer les utilisateurs et les hôtels, y compris les opérations CRUD, l'authentification et la réinitialisation de mot de passe.
+
+## Structure du Projet
+
 ```
 project1
 ├── backend
@@ -26,60 +28,110 @@ project1
 │   │   └── views.py
 │   ├── db.sqlite3
 │   └── manage.py
+├── frontend
+│   ├── src
+│   │   ├── app
+│   │   │   ├── forgot/
+│   │   │   │   └── page.tsx
+│   │   │   ├── forgot/
+│   │   │   │   └── reset/
+│   │   │   │       └── [uuid]/
+│   │   │   │           └── [token]/
+│   │   │   │               └── page.tsx
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx
+│   │   │   ├── register/
+│   │   │   │   └── page.tsx
+│   │   │   ├── favicon.ico
+│   │   │   ├── globals.css
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── components/
+│   │   ├── lib/
+│   │   └── ...
 └── README.md
 ```
 
-## Setup Instructions
-1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   cd project1
-   ```
+## Instructions de Configuration
 
-2. **Create a virtual environment:**
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
+### 1\. Cloner le dépôt :
 
-3. **Install dependencies:**
-   ```
-   pip install django
-   ```
+```bash
+git clone <repository-url>
+cd project1
+```
 
-4. **Run migrations:**
-   ```
-   python manage.py migrate
-   ```
+-----
 
-5. **Run the development server:**
-   ```
-   python manage.py runserver
-   ```
+### 2\. Lancer le Backend Django
 
-## Usage
-- Access the API at `http://127.0.0.1:8000/`.
-- Use the following endpoints for CRUD operations:
-  - **Users:**
-    - Create User: `POST /api/users/`
-    - Retrieve Users: `GET /api/users/`
-    - Update User: `PUT /api/users/<id>/`
-    - Delete User: `DELETE /api/users/<id>/`
-  - **Hotels:**
-    - Create Hotel: `POST /api/hotels/`
-    - Retrieve Hotels: `GET /api/hotels/`
-    - Update Hotel: `PUT /api/hotels/<id>/`
-    - Delete Hotel: `DELETE /api/hotels/<id>/`
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Sur Windows, utilisez `venv\Scripts\activate`
+pip install django djangorestframework
+python manage.py migrate
+python manage.py runserver
+```
 
-## Authentication
-- Implement user authentication using Django's built-in authentication system.
-- Use token-based authentication for API access.
+  - L'API du backend sera disponible à l'adresse `http://127.0.0.1:8000/`.
 
-## Testing
-- Run tests using:
-  ```
-  python manage.py test
-  ```
+-----
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### 3\. Lancer le Frontend Next.js
+
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+
+  - Le frontend sera disponible à l'adresse `http://localhost:3000/`.
+
+-----
+
+## Utilisation
+
+  - Accéder à l'API à l'adresse `http://127.0.0.1:8000/`.
+  - Accéder au frontend à l'adresse `http://localhost:3000/`.
+
+### Points d'Accès (API Endpoints)
+
+#### Utilisateurs
+
+  - **Créer un Utilisateur :** `POST /api/users/`
+  - **Lister les Utilisateurs :** `GET /api/users/`
+  - **Récupérer un Utilisateur :** `GET /api/users/<id>/`
+  - **Mettre à Jour un Utilisateur :** `PUT /api/users/<id>/`
+  - **Supprimer un Utilisateur :** `DELETE /api/users/<id>/`
+
+#### Hôtels
+
+  - **Créer un Hôtel :** `POST /api/hotels/`
+  - **Lister les Hôtels :** `GET /api/hotels/`
+  - **Récupérer un Hôtel :** `GET /api/hotels/<id>/`
+  - **Mettre à Jour un Hôtel :** `PATCH /api/hotels/<id>/`
+  - **Supprimer un Hôtel :** `DELETE /api/hotels/<id>/`
+
+#### Authentification
+
+  - **Connexion :** `POST /api/login/`
+  - **Déconnexion :** `POST /api/logout/`
+  - **Vérification d'Authentification :** `GET /api/auth-check/`
+  - **Obtenir un Jeton CSRF :** `GET /api/csrf-token/`
+
+#### Réinitialisation de Mot de Passe
+
+  - **Demande de Réinitialisation :** `POST /api/password-reset/request/`
+  - **Confirmation de Réinitialisation :** `POST /api/password-reset/confirm/`
+      - Charge utile : `{ "uid": "<uid>", "token": "<token>", "new_password": "<new_password>" }`
+  - Le chemin du frontend `forgot/reset/[uuid]/[token]/` doit exister et envoyer une requête POST à `/api/password-reset/confirm/`.
+
+-----
+
+## Authentification
+
+  - L'authentification des utilisateurs est mise en œuvre à l'aide du système d'authentification de Django.
+  - Utilisez l'authentification basée sur les sessions ou les jetons pour l'accès à l'API.
+
+-----

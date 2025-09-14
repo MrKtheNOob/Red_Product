@@ -7,6 +7,8 @@ from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.utils.encoding import force_str, force_bytes
 from django.core.mail import EmailMessage
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
+from django.views.decorators.csrf import ensure_csrf_cookie
+
 from .models import User, Hotel
 from .serializers import UsersSerializer, HotelSerializer, UserLoginSerializer
 
@@ -60,7 +62,7 @@ class HotelRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
         return Hotel.objects.filter(user=self.request.user)
 
 
-
+@ensure_csrf_cookie
 class UserLoginView(APIView):
     """Handle user login (open to anyone)"""
 

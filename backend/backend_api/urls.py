@@ -8,10 +8,12 @@ from backend_api.views import (
     HotelRetrieveUpdateDestroyView,
     UserLoginView,
     UserLogoutView,
-    AuthCheckView
+    AuthCheckView,
+    csrf_token
     )
 
 urlpatterns = [
+    path('csrf-token/', csrf_token, name='csrf-token'),
     path("users/", UserListCreateView.as_view(), name="user-list-create"),
     path("users/<int:pk>/", UserRetrieveUpdateDestroyView.as_view(), name="user-detail"),
     path("hotels/", HotelListCreateView.as_view(), name="hotel-list-create"),

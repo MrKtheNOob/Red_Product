@@ -10,6 +10,13 @@ from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from .models import User, Hotel
 from .serializers import UsersSerializer, HotelSerializer, UserLoginSerializer
 
+# views.py
+from django.http import JsonResponse
+from django.middleware.csrf import get_token
+
+def csrf_token(request):
+    return JsonResponse({'csrfToken': get_token(request)})
+
 
 class UsersViewSet(viewsets.ModelViewSet):
     """ViewSet for full CRUD on User model (requires authentication)"""

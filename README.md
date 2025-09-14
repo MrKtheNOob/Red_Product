@@ -57,7 +57,7 @@ project1
 ### 1\. Cloner le dépôt :
 
 ```bash
-git clone [<repository-url>](https://github.com/MrKtheNOob/Red_Product.git)
+git clone https://github.com/MrKtheNOob/Red_Product.git
 cd project1
 ```
 
@@ -69,7 +69,7 @@ cd project1
 cd backend
 python -m venv venv
 source venv/bin/activate  # Sur Windows, utilisez `venv\Scripts\activate`
-pip install django djangorestframework
+pip install -r ./requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```

@@ -60,9 +60,6 @@ class HotelRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 
     def get_queryset(self):
         return Hotel.objects.filter(user=self.request.user)
-
-
-@ensure_csrf_cookie
 class UserLoginView(APIView):
     """Handle user login (open to anyone)"""
 

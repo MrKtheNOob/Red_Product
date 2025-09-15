@@ -94,14 +94,14 @@ function Login() {
               />
             </div>
 
-            {/* Checkbox for terms and conditions */}
+            {/* Keep me logged in */}
             <div className="flex items-center mt-8">
               <input
                 type="checkbox"
                 id="terms"
                 className="form-checkbox h-4 w-4 text-gray-600 bg-gray-700 border-gray-600 rounded cursor-pointer"
               />
-              <label htmlFor="terms" className="ml-2 text-gray-600 text-lg">
+              <label htmlFor="remember_me" className="ml-2 text-gray-600 text-lg">
                 Gardez-moi connecté
               </label>
             </div>

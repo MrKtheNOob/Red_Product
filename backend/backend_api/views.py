@@ -65,6 +65,7 @@ class HotelRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 
     def get_queryset(self):
         return Hotel.objects.filter(user=self.request.user)
+    # kmlin
 class UserLoginView(APIView):
     """Handle user login (open to anyone)"""
 
@@ -76,6 +77,7 @@ class UserLoginView(APIView):
         if serializer.is_valid():
             email = serializer.validated_data["email"]
             password = serializer.validated_data["password"]
+            remember_me = serializer.validated_data.get("remember_me", False)
 
             try:
                 user_obj = User.objects.get(email=email)
@@ -89,9 +91,19 @@ class UserLoginView(APIView):
 
             if user is not None:
                 login(request, user)
+
+                # Handle "Remember me"
+                if remember_me:
+                    # keep for 2 weeks
+                    request.session.set_expiry(1209600)
+                else:
+                    # Expire at browser close
+                    request.session.set_expiry(0)
+
                 return Response(
                     {"message": "Login successful"}, status=status.HTTP_200_OK
                 )
+
             return Response(
                 {"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED
             )

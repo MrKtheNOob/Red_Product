@@ -24,13 +24,13 @@ export type Result<T> = {
 };
 
 export async function getCsrfToken() {
-    const csrfResponse = await axios.get(BASE_URL + "/api/csrf-token/", {
-      withCredentials: true, // make sure cookies are included
-    });
-    const csrfToken = csrfResponse.data.csrfToken;
+  const csrfResponse = await axios.get(BASE_URL + "/api/csrf-token/", {
+    withCredentials: true, // make sure cookies are included
+  });
+  const csrfToken = csrfResponse.data.csrfToken;
 
-    console.log("CSRF token (from backend):", csrfToken);
-    return csrfToken
+  console.log("CSRF token (from backend):", csrfToken);
+  return csrfToken
 }
 
 export function formatPrice(price: number): string {

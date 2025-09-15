@@ -20,8 +20,11 @@ function Login() {
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
     const password = (form.elements.namedItem("password") as HTMLInputElement)
       .value;
+    const rememberMe = (
+      form.elements.namedItem("remember_me") as HTMLInputElement
+    ).checked;
 
-    console.log("Login payload:", { email, password });
+    console.log("Login payload:", { email, password, rememberMe });
 
     try {
       const res = await axios.post(
@@ -98,10 +101,14 @@ function Login() {
             <div className="flex items-center mt-8">
               <input
                 type="checkbox"
-                id="terms"
+                id="remember_me"
+                name="remember_me"
                 className="form-checkbox h-4 w-4 text-gray-600 bg-gray-700 border-gray-600 rounded cursor-pointer"
               />
-              <label htmlFor="remember_me" className="ml-2 text-gray-600 text-lg">
+              <label
+                htmlFor="remember_me"
+                className="ml-2 text-gray-600 text-lg"
+              >
                 Gardez-moi connecté
               </label>
             </div>

@@ -93,11 +93,14 @@ class UserLoginView(APIView):
                 login(request, user)
 
                 # Handle "Remember me"
+                print(remember_me)
                 if remember_me:
                     # keep for 2 weeks
+                    print("Keeping user logged in")
                     request.session.set_expiry(1209600)
                 else:
                     # Expire at browser close
+                    print("User is logged in temporarily")
                     request.session.set_expiry(0)
 
                 return Response(
